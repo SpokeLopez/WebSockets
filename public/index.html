@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mi Aplicacion con sockets</title>
+<!-- Latest compiled and minified CSS & JS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<h1>Aplicacion con WebSockets</h1><hr>
+<div id="messages"></div><hr>
+
+<form onsubmit="return addMessage(this)">
+	<input type="text" id="username" class="form-control" value="" required="required" placeholder="NOMBRE DE USUARIO"><br>
+	<input type="text" id="texto" class="form-control" value="" required="required" placeholder="MENSAJE"><br>
+	<button type="submit" class="btn btn-success" value="ENVIAR!">ENVIAR!</button>
+	<button type="reset" class="btn btn-warning pull-right" value="ENVIAR!">LIMPIAR!</button>
+</form>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery.js"></script>
+
+</body>
+</html>
